@@ -1,19 +1,20 @@
-import { useDispatch, useSelector } from "react-redux";
-import KeyHighlights from "./components/KeyHighlights/KeyHighlights";
-import WebGISAndDataVisualization from "./components/HeaderComponents/WebGISAndDataVisualization";
-import Portfolio from "./components/portfolio";
-import { Navigate, Route, Routes } from "react-router-dom";
-import { useEffect } from "react";
-import { getProjectsFetch } from "./action/projectInfo";
 import { Box } from "@mui/material";
-import TrainingAndCapacityBuilding from "./components/HeaderComponents/TrainingAndCapacityBuilding";
-import SurveyAndGISMapping from "./components/HeaderComponents/SurveyAndGISMapping";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Navigate, Route, Routes } from "react-router-dom";
+import { getProjectsFetch } from "./action/projectInfo";
+import Form from "./components/Form/Form";
 import DisasterRiskResilience from "./components/HeaderComponents/DisasterRiskResilience";
-import SoftwareAndApplicationDevelopment from "./components/HeaderComponents/SoftwareAndApplicationDevelopment";
-import InnovationInLandReformAndManagement from "./components/HeaderComponents/InnovationInLandReformAndManagement";
-import OpenDataInitiatives from "./components/HeaderComponents/OpenDataInitiatives";
 import EGovernance from "./components/HeaderComponents/EGovernance";
 import FrontierTechnologies from "./components/HeaderComponents/FrontierTechnologies";
+import InnovationInLandReformAndManagement from "./components/HeaderComponents/InnovationInLandReformAndManagement";
+import OpenDataInitiatives from "./components/HeaderComponents/OpenDataInitiatives";
+import SoftwareAndApplicationDevelopment from "./components/HeaderComponents/SoftwareAndApplicationDevelopment";
+import SurveyAndGISMapping from "./components/HeaderComponents/SurveyAndGISMapping";
+import TrainingAndCapacityBuilding from "./components/HeaderComponents/TrainingAndCapacityBuilding";
+import WebGISAndDataVisualization from "./components/HeaderComponents/WebGISAndDataVisualization";
+import KeyHighlights from "./components/KeyHighlights/KeyHighlights";
+import Portfolio from "./components/portfolio";
 
 function App() {
   const dispatch = useDispatch();
@@ -41,6 +42,9 @@ function App() {
             <Route path="/portfolio/opendatainitiatives" element={<OpenDataInitiatives projects={projects} />} />
             <Route path="/portfolio/e-governance" element={<EGovernance projects={projects} />} />
             <Route path="/portfolio/frontiertechnologies" element={<FrontierTechnologies projects={projects} />} />
+
+            <Route path="/form" element={<Form />} />
+
           </Routes>
         </Box>
       </Box>
