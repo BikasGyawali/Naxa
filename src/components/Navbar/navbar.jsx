@@ -26,7 +26,7 @@ const Navbar = () => {
               href="#app-bar-with-responsive-menu"
               sx={{
                 mr: 2,
-                display: { xs: 'none', md: 'flex' },
+                display: { md: 'flex' },
                 letterSpacing: '.3rem',
                 color: 'inherit',
                 textDecoration: 'none',
@@ -77,7 +77,7 @@ const Navbar = () => {
                   sx={{
                     textTransform: 'none',
                     color: "#222222",
-                    fontSize: '1.1rem',
+                    fontSize: '1rem',
                     '&:hover': {
                       color: '#184add',
                     },
@@ -95,9 +95,8 @@ const Navbar = () => {
                 sx={{
                   textTransform: 'none',
                   backgroundColor: "#ffdc1c",
-                  fontSize: '1.1rem',
-                  my: 2,
-                  px: 4
+                  fontSize: '1rem',
+                  px: 4,
                 }}
               >
                 Let's Talk

@@ -10,11 +10,9 @@ const WebGISAndDataVisualization = ({ projects }) => {
   }, [projects])
 
   return (
-    <>
-      <Grid container>
-        <NavigationHeaders projects={webGISAndDataVisualizationProjects} text="Web GIS and Data Visualization" />
-      </Grid>
-    </>
+    <Grid container>
+      <NavigationHeaders projects={webGISAndDataVisualizationProjects} text="Web GIS and Data Visualization" />
+    </Grid>
   )
 }
 

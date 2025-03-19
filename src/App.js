@@ -14,7 +14,7 @@ import SurveyAndGISMapping from "./components/HeaderComponents/SurveyAndGISMappi
 import TrainingAndCapacityBuilding from "./components/HeaderComponents/TrainingAndCapacityBuilding";
 import WebGISAndDataVisualization from "./components/HeaderComponents/WebGISAndDataVisualization";
 import KeyHighlights from "./components/KeyHighlights/KeyHighlights";
-import Portfolio from "./components/portfolio";
+import Header from "./components/Header/header";
 
 function App() {
   const dispatch = useDispatch();
@@ -26,8 +26,8 @@ function App() {
 
   return (
     <div>
-      <Portfolio />
-      <Box display="flex" justifyContent="center" alignItems="center" flexDirection="column" marginBottom={20} marginLeft={{ xs: 2, md: 16, lg: 24 }} marginRight={{ xs: 2, md: 16, lg: 24 }}>
+      <Header />
+      <Box display="flex" justifyContent="center" alignItems="center" flexDirection="column" marginTop={{ xs: 34, sm: 10 }} marginBottom={20} marginLeft={{ xs: 2, md: 16, lg: 24 }} marginRight={{ xs: 2, md: 16, lg: 24 }}>
         <Box marginTop={50}>
           <Routes>
             <Route path="/" element={<Navigate to="/portfolio/keyhighlights" />} />

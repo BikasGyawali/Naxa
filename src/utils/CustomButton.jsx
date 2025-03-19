@@ -27,6 +27,8 @@ const CustomButton = ({ text, navigateTo, index, activeIndex }) => {
       <Typography
         sx={{
           fontWeight: 'bold',
+          fontSize: '0.9rem',
+          padding: 1
         }}
       >
         {text}
